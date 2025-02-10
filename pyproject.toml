@@ -1,0 +1,76 @@
+[project]
+name = "avito-merch"
+version = "0.1.0"
+description = "Avito Merch - магазин мерча для покупки товаров."
+authors = [
+    { name = "Shoxrux Yuldashov", email = "deagleshox@mail.ru" }
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi (>=0.115.8,<0.116.0)",
+    "uvicorn (>=0.34.0,<0.35.0)",
+    "sqlalchemy (>=2.0.38,<3.0.0)",
+    "pydantic (>=2.10.6,<3.0.0)",
+    "passlib (>=1.7.4,<2.0.0)",
+    "bcrypt (>=4.2.1,<5.0.0)",
+    "alembic (>=1.14.1,<2.0.0)",
+    "psycopg2-binary (>=2.9.10,<3.0.0)",
+    "python-jose (>=3.3.0,<4.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+isort = "^6.0.0"
+black = "^25.1.0"
+flake8 = "^7.1.1"
+flake8-pyproject = "^1.2.3"
+
+
+[tool.flake8]
+ignore = ["E231", "E241"]
+per-file-ignores = [
+    "__init__.py:F401",
+]
+max-line-length = 79
+count = true
+exclude = [
+    ".git/",
+    "__pycache__/",
+    "env/",
+    "venv/",
+    ".env/",
+    ".venv/",
+    "tests/",
+    ".pytest_cache",
+    ".vscode/",
+    ".idea/"
+]
+
+[tool.black]
+line-length = 79
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+    migrations
+  | __pycache__
+  | .pytest_cache
+  | .vscode
+  | .idea
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 79
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+known_local_folder = [
+    "avito_merch",
+]
