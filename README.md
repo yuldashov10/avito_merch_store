@@ -112,13 +112,13 @@ Spawn rate: 1
 - Время отклика (мс)
 - Количество пользователей
 
+### Отчет 1
+
 ![img](./img/load_testing_report.png)
 
-### 
+### Отчет 2
 
-
-### 
-
+![img](./img/load_testing_report_2.png)
 
 ---
 
