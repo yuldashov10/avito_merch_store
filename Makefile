@@ -1,4 +1,4 @@
-DIRS = avito_merch
+DIRS = src locustfile.py init_merch.py
 
 dev-pep8:
 		isort $(DIRS);
