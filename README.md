@@ -83,7 +83,7 @@ docker compose exec web pytest tests/
 Запуск тестов с покрытием кода:
 
 ```
-docker compose exec web pytest --cov=avito_merch tests/
+docker compose exec web pytest --cov=src --cov-report=term-missing
 ```
 
 ---
