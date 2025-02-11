@@ -27,3 +27,8 @@ uvicorn==0.34.0
 asyncpg==0.30.0
 locust==2.32.9
 python-decouple==3.8
+pytest==8.3.4
+pytest-cov==6.0.0
+pytest-asyncio==0.25.3
+httpx==0.28.1
+aiosqlite==0.21.0

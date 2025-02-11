@@ -19,7 +19,12 @@ dependencies = [
     "asyncpg (>=0.30.0,<0.31.0)",
     "locust (>=2.32.9,<3.0.0)",
     "python-decouple (>=3.8,<4.0)",
-    "bcrypt (==3.2.2)"
+    "bcrypt (==3.2.2)",
+    "pytest-cov (>=6.0.0,<7.0.0)",
+    "pytest (>=8.3.4,<9.0.0)",
+    "pytest-asyncio (>=0.25.3,<0.26.0)",
+    "httpx (>=0.28.1,<0.29.0)",
+    "aiosqlite (>=0.21.0,<0.22.0)"
 ]
 
 
@@ -75,5 +80,5 @@ include_trailing_comma = true
 force_grid_wrap = 0
 use_parentheses = true
 known_local_folder = [
-    "avito_merch",
+    "src",
 ]
