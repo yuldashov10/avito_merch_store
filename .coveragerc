@@ -1,0 +1,6 @@
+[run]
+omit =
+    tests/*
+    migrations/*
+    img/*
+    __pycache__
